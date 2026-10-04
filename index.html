@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    </title>StudyFlow</title>
+</head>
+
+<body>
+
+    <!--Main heading-->
+    <header>
+        <h1>StudyFlow</h1>
+        <p>Plan your studying. Stay on track.</p>
+    </header>
+
+    <!--Add Assignment Section-->
+    <main>
+
+        <section>
+            <h2>Add an Assigment</h2>
+
+            <form>
+
+                <!--Assignment Name-->
+                <label for=""assignment-name">Assignment Name:</label>
+                <input
+                    type="text"
+                    id="assignment-name"
+                    name="assignemnt-name"
+                    placeholder="e.g. Biology Test"
+                >
+
+                <br><br>
+
+                <!--Due Date-->
+                <label for="due-date">Due Date:</label>
+                <input
+                    type="date"
+                    id="due-date"
+                    name="due-date"
+                >
+
+                <br><br>
+
+                <!--Estimated Time-->
+                <label for="estimated-time">Estimated Time:</label>
+                <input 
+                    type="number"
+                    id="estimated-time"
+                    name="estimates-time"
+                    placeholder="Hours"
+                    min="0.5"
+                    steps=""0.5
+                >
+
+                <br><br>
+
+                <!--Difficulty-->
+                <label for="difficulty">Difficulty:</label>
+
+                <select id="difficulty" name="difficulty">
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
+
+                <br><br>
+
+
+                <!--Add Assignment Button-->
+                <button type="submit">Add Assignment</button>
+
+            </form>
+
+        </section>
+
+
+        <!--Assignments Section-->
+        <section>
+
+            <h2>My Assignments</h2>
+
+            <!--Example Assignment-->
+            <div>
+                <h3>Biology Test</h3>
+                <p>Due: October 10</p>
+                <p>Estimated Time: 2 hours</p>
+                <p>Difficulty: Hard</p>
+            </div>
+
+            <br>
+
+            <!--Another Example Assignment-->
+            <div>
+                <h3>French Homeowrk</h3>
+                <p>Due: October 6</p>
+                <p>Estimated Time: 30 minutes</p>
+                <p>Difficulty: Easy</p>
+            </div>
+
+        </section>
+
+
+        <!--Study Plan Section-->
+        <section>
+
+            <h2>My Study Plain</h2>
+
+            <p>Your personalized study plan will appear here.</p>
+
+        </section>
+
+    </main>
+
+    <!--Footer-->
+    <footer>
+        <p>StudyFlow</p>
+    </footer>
+
+</body>
+</html>
