@@ -1,122 +1,499 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, intial-scale=1.0">
-    </title>StudyFlow</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>StudyFlow</title>
+
+    <!-- Google Font: Limelight -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Limelight&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Our CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 
 <body>
 
-    <!--Main heading-->
-    <header>
-        <h1>StudyFlow</h1>
-        <p>Plan your studying. Stay on track.</p>
+    <!-- ==============================
+         TOP NAVIGATION BAR
+         ============================== -->
+
+    <header class="top-navbar">
+
+        <div class="logo">
+            StudyFlow
+        </div>
+
+        <nav class="top-navigation">
+
+            <a href="#dashboard">Home</a>
+
+            <a href="#assignments">Assignments</a>
+
+            <a href="#study-plan">Study Plan</a>
+
+            <a href="#progress">Progress</a>
+
+        </nav>
+
     </header>
 
-    <!--Add Assignment Section-->
-    <main>
 
-        <section>
-            <h2>Add an Assigment</h2>
+    <!-- ==============================
+         APP LAYOUT
+         ============================== -->
 
-            <form>
-
-                <!--Assignment Name-->
-                <label for=""assignment-name">Assignment Name:</label>
-                <input
-                    type="text"
-                    id="assignment-name"
-                    name="assignemnt-name"
-                    placeholder="e.g. Biology Test"
-                >
-
-                <br><br>
-
-                <!--Due Date-->
-                <label for="due-date">Due Date:</label>
-                <input
-                    type="date"
-                    id="due-date"
-                    name="due-date"
-                >
-
-                <br><br>
-
-                <!--Estimated Time-->
-                <label for="estimated-time">Estimated Time:</label>
-                <input 
-                    type="number"
-                    id="estimated-time"
-                    name="estimates-time"
-                    placeholder="Hours"
-                    min="0.5"
-                    steps=""0.5
-                >
-
-                <br><br>
-
-                <!--Difficulty-->
-                <label for="difficulty">Difficulty:</label>
-
-                <select id="difficulty" name="difficulty">
-                    <option value="easy">Easy</option>
-                    <option value="medium">Medium</option>
-                    <option value="hard">Hard</option>
-                </select>
-
-                <br><br>
+    <div class="app-container">
 
 
-                <!--Add Assignment Button-->
-                <button type="submit">Add Assignment</button>
+        <!-- ==============================
+             SIDEBAR
+             ============================== -->
 
-            </form>
+        <aside class="sidebar">
 
-        </section>
-
-
-        <!--Assignments Section-->
-        <section>
-
-            <h2>My Assignments</h2>
-
-            <!--Example Assignment-->
-            <div>
-                <h3>Biology Test</h3>
-                <p>Due: October 10</p>
-                <p>Estimated Time: 2 hours</p>
-                <p>Difficulty: Hard</p>
+            <div class="sidebar-logo">
+                StudyFlow
             </div>
 
-            <br>
+            <nav class="sidebar-navigation">
 
-            <!--Another Example Assignment-->
-            <div>
-                <h3>French Homeowrk</h3>
-                <p>Due: October 6</p>
-                <p>Estimated Time: 30 minutes</p>
-                <p>Difficulty: Easy</p>
-            </div>
+                <a href="#dashboard">
+                    <span>🏠</span>
+                    Home
+                </a>
 
-        </section>
+                <a href="#assignments">
+                    <span>📚</span>
+                    Assignments
+                </a>
+
+                <a href="#study-plan">
+                    <span>📅</span>
+                    Study Plan
+                </a>
+
+                <a href="#progress">
+                    <span>📊</span>
+                    Progress
+                </a>
+
+            </nav>
+
+        </aside>
 
 
-        <!--Study Plan Section-->
-        <section>
+        <!-- ==============================
+             MAIN CONTENT
+             ============================== -->
 
-            <h2>My Study Plain</h2>
+        <main class="main-content" id="dashboard">
 
-            <p>Your personalized study plan will appear here.</p>
 
-        </section>
+            <!-- ==============================
+                 WELCOME SECTION
+                 ============================== -->
 
-    </main>
+            <section class="welcome-section">
 
-    <!--Footer-->
+                <h1>StudyFlow</h1>
+
+                <p>
+                    Plan your studying. Stay on track.
+                </p>
+
+            </section>
+
+
+            <!-- ==============================
+                 DASHBOARD
+                 ============================== -->
+
+            <section class="dashboard-section">
+
+                <h2>Dashboard</h2>
+
+                <div class="dashboard-cards">
+
+
+                    <!-- Assignments -->
+
+                    <div class="stat-card">
+
+                        <p class="stat-label">
+                            Assignments
+                        </p>
+
+                        <p class="stat-number">
+                            4
+                        </p>
+
+                    </div>
+
+
+                    <!-- Study Hours -->
+
+                    <div class="stat-card">
+
+                        <p class="stat-label">
+                            Study Hours
+                        </p>
+
+                        <p class="stat-number">
+                            6
+                        </p>
+
+                    </div>
+
+
+                    <!-- Progress -->
+
+                    <div class="stat-card">
+
+                        <p class="stat-label">
+                            Weekly Progress
+                        </p>
+
+                        <p class="stat-number">
+                            72%
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ==============================
+                 ADD ASSIGNMENT
+                 ============================== -->
+
+            <section class="assignment-form-section">
+
+                <h2>Add an Assignment</h2>
+
+                <form id="assignment-form">
+
+
+                    <!-- Assignment Name -->
+
+                    <div class="form-group">
+
+                        <label for="assignment-name">
+                            Assignment Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="assignment-name"
+                            name="assignment-name"
+                            placeholder="e.g. Biology Test"
+                        >
+
+                    </div>
+
+
+                    <!-- Due Date -->
+
+                    <div class="form-group">
+
+                        <label for="due-date">
+                            Due Date
+                        </label>
+
+                        <input
+                            type="date"
+                            id="due-date"
+                            name="due-date"
+                        >
+
+                    </div>
+
+
+                    <!-- Estimated Time -->
+
+                    <div class="form-group">
+
+                        <label for="estimated-time">
+                            Estimated Time
+                        </label>
+
+                        <input
+                            type="number"
+                            id="estimated-time"
+                            name="estimated-time"
+                            placeholder="Hours"
+                            min="0.5"
+                            step="0.5"
+                        >
+
+                    </div>
+
+
+                    <!-- Difficulty -->
+
+                    <div class="form-group">
+
+                        <label for="difficulty">
+                            Difficulty
+                        </label>
+
+                        <select
+                            id="difficulty"
+                            name="difficulty"
+                        >
+
+                            <option value="easy">
+                                Easy
+                            </option>
+
+                            <option value="medium">
+                                Medium
+                            </option>
+
+                            <option value="hard">
+                                Hard
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- Add Button -->
+
+                    <button
+                        type="submit"
+                        class="primary-button"
+                    >
+                        + Add Assignment
+                    </button>
+
+                </form>
+
+            </section>
+
+
+            <!-- ==============================
+                 ASSIGNMENTS
+                 ============================== -->
+
+            <section
+                class="assignments-section"
+                id="assignments"
+            >
+
+                <h2>My Assignments</h2>
+
+                <div class="assignment-list">
+
+
+                    <!-- Biology -->
+
+                    <article class="assignment-card">
+
+                        <div class="assignment-info">
+
+                            <h3>
+                                Biology Test
+                            </h3>
+
+                            <p>
+                                Due: October 10
+                            </p>
+
+                            <p>
+                                Estimated Time: 2 hours
+                            </p>
+
+                        </div>
+
+                        <span class="difficulty-badge hard">
+                            Hard
+                        </span>
+
+                    </article>
+
+
+                    <!-- French -->
+
+                    <article class="assignment-card">
+
+                        <div class="assignment-info">
+
+                            <h3>
+                                French Homework
+                            </h3>
+
+                            <p>
+                                Due: October 6
+                            </p>
+
+                            <p>
+                                Estimated Time: 30 minutes
+                            </p>
+
+                        </div>
+
+                        <span class="difficulty-badge easy">
+                            Easy
+                        </span>
+
+                    </article>
+
+
+                    <!-- Math -->
+
+                    <article class="assignment-card">
+
+                        <div class="assignment-info">
+
+                            <h3>
+                                Math Worksheet
+                            </h3>
+
+                            <p>
+                                Due: October 7
+                            </p>
+
+                            <p>
+                                Estimated Time: 1 hour
+                            </p>
+
+                        </div>
+
+                        <span class="difficulty-badge medium">
+                            Medium
+                        </span>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+
+            <!-- ==============================
+                 STUDY PLAN
+                 ============================== -->
+
+            <section
+                class="study-plan-section"
+                id="study-plan"
+            >
+
+                <h2>My Study Plan</h2>
+
+                <div class="study-plan-container">
+
+
+                    <!-- Today -->
+
+                    <div class="study-day">
+
+                        <h3>
+                            Today
+                        </h3>
+
+                        <p>
+                            Biology — 1 hour
+                        </p>
+
+                        <p>
+                            French — 30 minutes
+                        </p>
+
+                    </div>
+
+
+                    <!-- Tomorrow -->
+
+                    <div class="study-day">
+
+                        <h3>
+                            Tomorrow
+                        </h3>
+
+                        <p>
+                            Math — 1 hour
+                        </p>
+
+                        <p>
+                            Biology — 1 hour
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ==============================
+                 PROGRESS
+                 ============================== -->
+
+            <section
+                class="progress-section"
+                id="progress"
+            >
+
+                <h2>Weekly Progress</h2>
+
+                <div class="progress-container">
+
+                    <div class="progress-label">
+
+                        <span>
+                            Weekly Goal
+                        </span>
+
+                        <span>
+                            72%
+                        </span>
+
+                    </div>
+
+
+                    <div class="progress-bar">
+
+                        <div class="progress-fill"></div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+        </main>
+
+    </div>
+
+
+    <!-- ==============================
+         FOOTER
+         ============================== -->
+
     <footer>
-        <p>StudyFlow</p>
+
+        <p>
+            StudyFlow • Plan smarter. Study better.
+        </p>
+
     </footer>
 
+
 </body>
+
 </html>
