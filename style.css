@@ -10,7 +10,7 @@
 
  body { 
     background-color: #89A482;
-    color: #486741;
+    color: #3c5b35;
     font-family: "Times New Roman", Times, serif;
     font-size: 14px;
     line-height: 1.5;
@@ -18,7 +18,7 @@
  }
 
  a {
-    color: #486741;
+    color: #3c5b35;
     text-decoration: none;
  }
 
@@ -43,7 +43,7 @@
 .logo {
     font-family: "Limelight", serif;
     font-size: 24px;
-    color: #486741;
+    color: #3c5b35;
 }
 
 .top-navbar nav {
@@ -87,7 +87,7 @@
     font-family: "Limelight", serif;
     font-size: 20px;
     font-weight: normal;
-    color: #486741;
+    color: #3c5b35;
     text-align: center;
     margin-bottom: 28px;
 }
@@ -124,7 +124,7 @@
     font-family: "Limelight", serif;
     font-size: 45px;
     font-weight: normal;
-    color: #486741;
+    color: #3c5b35;
     line-height: 1.2;
     margin-bottom: 10px;
 }
@@ -132,7 +132,7 @@
 .welcome-section p {
     font-family: "Times New Roman", Times, serif;
     font-size: 22px;
-    color: #486741;
+    color: #3c5b35;
 }
 
 section {
@@ -145,7 +145,7 @@ section > h2 {
     font-size: 20px;
     font-weight: normal;
     text-align: center;
-    color: #486741;
+    color: #3c5b35;
     margin-bottom: 30px;
 }
 
@@ -180,7 +180,7 @@ section > h2 {
     display: block;
     font-family: "Limelight", serif;
     font-size: 25px;
-    color: #486741;
+    color: #3c5b35;
 }
 
 .assignment-form-section form {
@@ -202,7 +202,7 @@ section > h2 {
 }
 
 .form-group label {
-    color: #486741;
+    color: #3c5b35;
 }
 
 .form-group input,
@@ -212,7 +212,7 @@ section > h2 {
     border: none;
     border-radius: 12px;
     background-color: #D1EDD3;
-    color: #486741;
+    color: #3c5b35;
     outline: none;
     font-size: 14px;
     transition: box-shadow 0.2s ease, transform 0.2s ease;
@@ -225,7 +225,7 @@ section > h2 {
 }
 
 .form-group input::placeholder {
-    color: #486741;
+    color: #3c5b35;
     opacity: 0.65;
 }
 
@@ -234,7 +234,7 @@ section > h2 {
     justify-self: center;
     border: none;
     border-radius: 999px;
-    background-color: #486741;
+    background-color: #3c5b35;
     color: #D1EDD3;
     font-family: "Limelight", serif;
     font-size: 14px;
@@ -298,12 +298,12 @@ section > h2 {
     font-family: "Limelight", serif;
     font-size: 17px;
     font-weight: normal;
-    color: #486741;
+    color: #3c5b35;
     margin-bottom: 8px;
 }
 
 .assignment-info p {
-    color: #486741;
+    color: #3c5b35;
     margin-top: 3px;
 }
 
@@ -317,7 +317,7 @@ section > h2 {
 
 .difficulty-badge.easy {
     background-color: #ACC5A6;
-    color: #486741;
+    color: #3c5b35;
 }
 
 .difficulty-badge.medium {
@@ -326,7 +326,7 @@ section > h2 {
 }
 
 .difficulty-badge.hard {
-    background-color: #486741;
+    background-color: #3c5b35;
     color: #D1EDD3;
 }
 
@@ -354,7 +354,7 @@ section > h2 {
     font-family: "Limelight", serif;
     font-size: 17px;
     font-weight: normal;
-    color: #486741;
+    color: #3c5b35;
     margin-bottom: 12px;
 }
 
@@ -388,7 +388,7 @@ section > h2 {
 .progress-fill {
     width: 72%;
     height: 100%;
-    background-color: #486741;
+    background-color: #3c5b35;
     border-radius: 999px;
     animation: progressGrow 1.2s ease-out 0.5s both;
 }
@@ -396,7 +396,7 @@ section > h2 {
 footer {
     text-align: center;
     padding: 25px;
-    color: #486741;
+    color: #3c5b35;
     animation: riseIn 0.8s ease-out 0.4s both;
 }
 
